@@ -1,0 +1,27 @@
+.show-grid {
+  padding-left: 10px;
+}
+.btn_view {
+  /* background-color: rgb(155, 36, 155); */
+  background-color: rgb(123, 25, 148);
+  color: white;
+  height: 45px;
+  width: 80px;
+  padding: 5px;
+  border-radius: 0.6cm;
+  text-transform: none;
+  font-size: medium;
+}
+.btn_view:hover {
+  font-weight: 400;
+  color: white;
+  font-size: larger;
+}
+
+.modal_details {
+  background-color: rgb(172, 110, 187);
+  color: white;
+}
+.closeButton {
+  color: white;
+}
