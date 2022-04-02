@@ -9,7 +9,7 @@ const getToken=()=>{
 export const userLogin=(authRequest)=>{
     return axios({
         'method':'POST',
-        'url':`${process.env.hostUrl||'http://localhost:8080'}/login`,
+        'url':`${process.env.hostUrl||'http://localhost:8081'}/login`,
         'data':authRequest
     })
 }
@@ -17,7 +17,7 @@ export const userLogin=(authRequest)=>{
 export const fetchUserData=(authRequest)=>{
     return axios({
         method:'GET',
-        url:`${process.env.hostUrl||'http://localhost:8080'}/userinfo`,
+        url:`${process.env.hostUrl||'http://localhost:8081'}/userinfo`,
         headers:{
             'Authorization':'Bearer '+getToken()
         }
