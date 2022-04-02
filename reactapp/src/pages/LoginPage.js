@@ -4,6 +4,7 @@ import { authenticate, authFailure, authSuccess } from '../redux/authActions';
 import './loginpage.css';
 import {userLogin} from '../api/authenticationService';
 import {Alert,Spinner} from 'react-bootstrap';
+import { Link } from "react-router-dom";
 
 const LoginPage=({loading,error,...props})=>{
 
@@ -56,7 +57,10 @@ const LoginPage=({loading,error,...props})=>{
     console.log("Loading ",loading);
 
     return (
-        <div className="login-page">                         
+        <div className="login-page">
+                   
+              
+                                            
         <section className="h-100">
         <div className="container h-100">
        
@@ -70,7 +74,7 @@ const LoginPage=({loading,error,...props})=>{
                             <form className="my-login-validation" onSubmit={handleSubmit} noValidate={false}>
                                 <div className="form-group">
                                     <label htmlFor="email">User Name</label>
-                                    <input id="username" type="text" className="form-control" minLength={5} value={values.userName} onChange={handleChange} name="userName" required />
+                                    <input id="email" type="text" className="form-control" minLength={5} value={values.userName} onChange={handleChange} name="userName" required />
                                     
                                         <div className="invalid-feedback">
                                             UserId is invalid
@@ -87,14 +91,14 @@ const LoginPage=({loading,error,...props})=>{
                                     <div className="invalid-feedback">
                                         Password is required
                                     </div>
-                                </div>
+                                </div><br></br>
 
-                                <div className="form-group">
+                                {/* <div className="form-group">
                                     <div className="custom-control custom-checkbox">
                                         <input type="checkbox" className="custom-control-input" id="customCheck1" />
                                         <label className="custom-control-label" htmlFor="customCheck1">Remember me</label>
                                      </div>
-                                </div>
+                                </div> */}
                                 
 
                                 <div className="form-group m-0">
@@ -111,6 +115,14 @@ const LoginPage=({loading,error,...props})=>{
                                         )}
                                     </button>
                                 </div>
+
+                                <div class="signup_link">
+                                New here?
+                                    <a>
+                                    <Link to="/signup">Click to signup</Link>
+                                    </a>
+                                </div>
+
                             </form>
                             { error &&
                             <Alert style={{marginTop:'20px'}} variant="danger">
