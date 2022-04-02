@@ -82,25 +82,13 @@ const LoginPage=({loading,error,...props})=>{
                                 </div>
 
                                 <div className="form-group">
-                                    <label>Password
-                                        {/* <a href="forgot.html" className="float-right">
-                                            Forgot Password?
-                                        </a> */}
-                                    </label>
+                                    <label>password</label>
                                     <input id="password" type="password" className="form-control" minLength={8} value={values.password} onChange={handleChange} name="password" required/>
                                     <div className="invalid-feedback">
                                         Password is required
                                     </div>
                                 </div><br></br>
-
-                                {/* <div className="form-group">
-                                    <div className="custom-control custom-checkbox">
-                                        <input type="checkbox" className="custom-control-input" id="customCheck1" />
-                                        <label className="custom-control-label" htmlFor="customCheck1">Remember me</label>
-                                     </div>
-                                </div> */}
                                 
-
                                 <div className="form-group m-0">
                                     <button type="submit" className="btn btn-primary">
                                         Login
