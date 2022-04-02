@@ -1,0 +1,62 @@
+.ViewExp {
+  width: 98%;
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  /* margin: 20px; */
+  text-align: center;
+}
+.title_expenses {
+  width: 100%;
+}
+.ViewExpenses {
+  /* background-image: url("../preview16.jpg"); */
+  background-color: rgb(226, 222, 226);
+  height: 1000px;
+  width: 100%;
+}
+.card1 {
+  min-height: 200px;
+  min-width: 280px;
+  box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.2);
+  background-color: rgb(204, 202, 204);
+  /* backdrop-filter: blur(10px); */
+
+  margin: 0 25px 50px 50px;
+  padding: 5px;
+}
+.Icon_edit {
+  font-size: 0.7cm;
+  float: right;
+  padding: 0 30px 10px 0;
+}
+.Icon_delete {
+  font-size: 0.7cm;
+  float: left;
+  padding: 0 10px 30px 0;
+}
+.title_expenses {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.logo_user {
+  text-align: center;
+  font-size: 10vmin;
+}
+.search_text {
+  width: 1500px;
+  height: 100px;
+  padding-left: 1100px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.icon_search {
+  padding: 20px;
+}
+.Search {
+  width: 10px;
+}

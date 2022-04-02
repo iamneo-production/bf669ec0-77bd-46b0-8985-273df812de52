@@ -1,29 +1,29 @@
 .ViewExp {
   width: 98%;
-  height: 200px;
+  height: 100px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  margin: 20px;
+  /* margin: 20px; */
   text-align: center;
+}
+.title_expenses {
+  width: 100%;
 }
 .ViewExpenses {
   /* background-image: url("../preview16.jpg"); */
   background-color: rgb(226, 222, 226);
-  background-size: cover;
-
-  height: 100vh;
+  height: 1000px;
   width: 100%;
 }
 .card1 {
-  min-height: 250px;
+  min-height: 200px;
   min-width: 280px;
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
   box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.2);
   background-color: rgb(204, 202, 204);
   /* backdrop-filter: blur(10px); */
 
-  margin: 20px 50px 50px 130px;
+  margin: 0 25px 50px 50px;
   padding: 5px;
 }
 .Icon_edit {
@@ -45,4 +45,18 @@
 .logo_user {
   text-align: center;
   font-size: 10vmin;
+}
+.search_text {
+  width: 1500px;
+  height: 100px;
+  padding-left: 1100px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.icon_search {
+  padding: 20px;
+}
+.Search {
+  width: 10px;
 }

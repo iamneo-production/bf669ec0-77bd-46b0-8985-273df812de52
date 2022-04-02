@@ -22,30 +22,25 @@ const Sidebar = () => {
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <a className="nav-link" href="#">
-                Dashboard
+                Home
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/AddExpenses">
+              <a className="nav-link" href="/employee/AddExpenses">
                 Add Expenses
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/ViewExpenses">
-                View Expenses
+              <a className="nav-link" href="/employee/ViewExpenses">
+                My Expenses
               </a>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/">
-                Hr_View Expenses
-              </a>
-            </li>
+
             <li>
               <a className="nav-link" href="/">
                 Logout
               </a>
             </li>
-         
           </ul>
         </div>
       </div>

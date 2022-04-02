@@ -1,0 +1,72 @@
+.App1 {
+  font-family: "Open Sans", sans-serif;
+  /* background-color: rgb(240, 236, 236); */
+  background-image: url("./pc.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+.title_add {
+  color: black;
+  font-weight: 600;
+  text-align: center;
+}
+.upload {
+  padding-right: 20px;
+  font-weight: 1000;
+}
+.App-logo {
+  height: 20px;
+  pointer-events: none;
+}
+.App-header {
+  height: 600px;
+  width: 500px;
+  /* background-color: rgba(253, 253, 253, 0.13); */
+  /* position: absolute; */
+  background-color: rgb(247, 241, 247);
+
+  transform: translate(100%, 7%);
+  left: 50%;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(196, 194, 194, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+
+  padding: 15px 25px;
+  color: black;
+  font-weight: 300;
+}
+#submit_btn {
+  background-color: rgb(18, 18, 24);
+  text-align: center;
+  justify-content: center;
+  height: 1cm;
+  width: 3.4cm;
+}
+.logo {
+  height: 25vmin;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+#user_icon {
+  font-size: 1.5cm;
+  text-align: center;
+}
+.App-link {
+  color: #61dafb;
+  background-image: url("/src/logo.svg");
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

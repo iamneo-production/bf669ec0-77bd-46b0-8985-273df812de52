@@ -1,15 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Button, Modal, Row, Col, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-// import { Link } from "gatsby";
-import "./manager_expenses/modal";
-
 function MydModalWithGrid(props) {
-  const [clicked, setClicked] = useState(false);
   const data = props.data;
   const clickHandler = props.clickHandler;
- 
+
   return (
     <Modal {...props} aria-labelledby="contained-modal-title-vcenter" centered>
       <Modal.Header closeButton className="modal_details">
@@ -19,24 +15,12 @@ function MydModalWithGrid(props) {
       </Modal.Header>
       <Modal.Body className="show-grid">
         <Container>
-          {/* <div className="logo_user">
-            <FaRegUserCircle />
-          </div> */}
           <Row>
             <Col xs={1} md={6}>
               <h4>Employee Id</h4>
             </Col>
             <Col xs={2} md={6}>
-              .col-xs-6 .col-md-4
-            </Col>
-          </Row>
-
-          <Row>
-            <Col xs={1} md={6}>
-              <h4>Employee Name</h4>
-            </Col>
-            <Col xs={2} md={6}>
-              .col-xs-6 .col-md-4
+              {data.userid}
             </Col>
           </Row>
 
@@ -45,7 +29,7 @@ function MydModalWithGrid(props) {
               <h4>Expense Id</h4>
             </Col>
             <Col xs={2} md={6}>
-              .col-xs-6 .col-md-4
+              {data.expenseid}
             </Col>
           </Row>
 
@@ -54,15 +38,7 @@ function MydModalWithGrid(props) {
               <h4>Bill Number</h4>
             </Col>
             <Col xs={2} md={6}>
-              .col-xs-6 .col-md-4
-            </Col>
-          </Row>
-          <Row>
-            <Col xs={7} md={6}>
-              <h4>Employee Id</h4>
-            </Col>
-            <Col xs={2} md={6}>
-              .col-xs-6 .col-md-4
+              {data.billnumber}
             </Col>
           </Row>
 
@@ -71,7 +47,7 @@ function MydModalWithGrid(props) {
               <h4>Bill Cost</h4>
             </Col>
             <Col xs={2} md={6}>
-              .col-xs-6 .col-md-4
+              {data.billcost}
             </Col>
           </Row>
           <Row>
@@ -79,7 +55,7 @@ function MydModalWithGrid(props) {
               <h4>Dated on</h4>
             </Col>
             <Col xs={2} md={6}>
-              .col-xs-6 .col-md-4
+              {data.datedon}
             </Col>
           </Row>
 
@@ -88,21 +64,24 @@ function MydModalWithGrid(props) {
               <h4>Receipt</h4>
             </Col>
             <Col xs={2} md={6}>
-              .col-xs-6 .col-md-4
+              {/* <img
+                src={
+                  "data:image/png;base64," +
+                  Buffer.from(data.billimage, "base64")
+                } 
+              />*/}
+              {/* URL.createObjectURL({data.billimage}) */}
             </Col>
           </Row>
-          {/* <div className="Icon_edit">
-            <FaEdit onClick={"./AddExpenses.js"} />
-          </div> */}
         </Container>
       </Modal.Body>
       <Modal.Footer>
-        <Link to="/EditExpenses">
+        <Link to="/employee/AddExpenses">
           <Button onClick={props.onHide} variant="primary">
             Edit
           </Button>
         </Link>
-      
+
         <Button onClick={props.onHide} variant="danger">
           Delete
         </Button>

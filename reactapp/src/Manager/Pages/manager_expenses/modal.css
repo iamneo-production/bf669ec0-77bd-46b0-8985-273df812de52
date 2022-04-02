@@ -11,6 +11,7 @@
   border-radius: 0.6cm;
   text-transform: none;
   font-size: medium;
+  
 }
 .btn_view:hover {
   font-weight: 400;
@@ -23,5 +24,8 @@
   color: white;
 }
 .closeButton {
+  color: white;
+}
+.paid_btn{
   color: white;
 }
