@@ -7,6 +7,7 @@ import ViewExpenses from "./home/ViewExpenses";
 import EditExpenses from "./home/Editexpenses";
 import Sidebar from "./NavBar/navbar";
 import Hr_ViewExpenses from "./home/manager_expenses/hr_ViewExpenses";
+import LoginPage from "./pages/LoginPage";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
       <Sidebar />
       <Router>
         <Routes>
+          <Route path="/LoginPage" exact element={<LoginPage />} />
           <Route path="/Addexpenses" exact element={<AddExpenses />} />
           <Route path="/EditExpenses" exact element={<EditExpenses />} />
           <Route path="/ViewExpenses" exact element={<ViewExpenses />} />
