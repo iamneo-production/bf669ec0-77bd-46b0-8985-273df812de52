@@ -14,6 +14,11 @@ export const authSuccess= (content)=>{
     }
 }
 
+export const authenticate=()=>{
+    return {
+        type:AUTH_REQ
+    }
+}
 export const authFailure=(error)=>{
     return {
         type:AUTH_FAILURE,
