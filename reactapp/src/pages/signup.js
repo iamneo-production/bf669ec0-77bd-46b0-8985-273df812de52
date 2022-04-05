@@ -77,26 +77,7 @@ function Signup() {
               padding: " 20px 50px",
               borderRadius: "70px",
             }}
-          >
-            <h2 className="signup" style={{ color: "black", fontSize: "35px" }}>
-              Sign Up
-            </h2>
-            <br></br>
-            {/* <div className="text">
-              <a>
-                <p>Please enter all your details to continue</p>
-              </a>
-            </div> */}
-            <form onSubmit={handleSubmit}>
-              <div className="txt_field" name="emailid">
-                <input
-                  type="text"
-                  name="emailid"
-                  value={users.emailid}
-                  onChange={handleChange}
-                  required
-                ></input>
-                <span></span>
+          >  <span></span>
                 <label>Enter Email</label>
               </div>
               <div className="txt_field" name="username">
