@@ -81,12 +81,7 @@ function Signup() {
                 <label>Enter Email</label>
               </div>
               <div className="txt_field" name="username">
-                <input
-                  type="text"
-                  name="username"
-                  value={users.username}
-                  onChange={handleChange}
-                  required
+                
                 ></input>
                 <span></span>
                 <label>Enter Username</label>
