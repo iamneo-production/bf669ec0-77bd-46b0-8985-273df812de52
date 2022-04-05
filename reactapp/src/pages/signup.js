@@ -215,15 +215,7 @@ function Signup() {
                           </option>
                         </select>
                       </div>
-                      {/* <div className="dropdown-menu" aria-labelledby="actions">
-                          <a className="dropdown-item" href="#">
-                            Employee
-                          </a>
-                          <a className="dropdown-item" href="#">
-                            HR
-                          </a>
-                        </div> */}
-                      {/* </div> */}
+                    
                       <input type="submit" value="Sign up"></input>
                       <div className="signup_link">
                         Have an account?
