@@ -148,7 +148,7 @@ function Signup() {
                 <label for="role">Role:</label>
                 <select id="role" name="role">
                   <option value="employee" name="role">
-                    {" "}
+                    {" fkabf"}
                     Employee
                   </option>
                   <option value="hr" name="role">
