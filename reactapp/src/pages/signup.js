@@ -136,11 +136,7 @@ function Signup() {
                       Sign Up
                     </h2>
                     <br></br>
-                    {/* <div className="text">
-                      <a>
-                        <p>Please enter all your details to continue</p>
-                      </a>
-                    </div> */}
+                    
                     <form onSubmit={handleSubmit}>
                       <div className="txt_field" name="emailid">
                         <input
