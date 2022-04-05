@@ -81,11 +81,7 @@ function Signup() {
               Sign Up
             </h2>
             <br></br>
-            {/* <div className="text">
-              <a>
-                <p>Please enter all your details to continue</p>
-              </a>
-            </div> */}
+            
             <form onSubmit={handleSubmit}>
               <div className="txt_field" name="emailid">
                 <input
@@ -160,15 +156,7 @@ function Signup() {
                   </option>
                 </select>
               </div>
-              {/* <div className="dropdown-menu" aria-labelledby="actions">
-                  <a className="dropdown-item" href="#">
-                    Employee
-                  </a>
-                  <a className="dropdown-item" href="#">
-                    HR
-                  </a>
-                </div> */}
-              {/* </div> */}
+              
               <input type="submit" value="Sign up"></input>
               <div className="signup_link">
                 Have an account?
@@ -183,12 +171,5 @@ function Signup() {
     </div>
   );
 }
-
-// const myStyle = {
-//   backgroundImage:
-//     "url('https://drive.google.com/uc?export=download&id=1uKvZY6-os_GEjvrWVEr4h0D4AtN2r1LB')",
-//   backgroundSize: "cover",
-//   backgroundRepeat: "no-repeat",
-// };
 
 export default Signup;
