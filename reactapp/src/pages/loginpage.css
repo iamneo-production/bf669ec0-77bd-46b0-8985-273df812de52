@@ -3,7 +3,10 @@ body.login-page {
 	font-size: 14px;
 }
 
-
+.text {
+    text-align: left;
+    text-size-adjust: 30px;
+  }
 
 .login-page .brand {
 	width: 90px;
