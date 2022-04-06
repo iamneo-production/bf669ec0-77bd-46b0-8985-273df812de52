@@ -20,6 +20,7 @@ export default function App() {
           
           <Route exact path="/dashboard" component={Dashboard}/>
           <Route exact path="/signup" component={Signup}/>
+          
           <Route path="/Addexpenses" exact element={<AddExpenses />} />
           <Route path="/EditExpenses" exact element={<EditExpenses />} />
           <Route path="/ViewExpenses" exact element={<ViewExpenses />} />
