@@ -149,7 +149,7 @@ function Signup() {
                 <select id="role" name="role">
                   <option value="employee" name="role">
                     {" "}
-                    employee
+                    Employee
                   </option>
                   <option value="hr" name="role">
                     HR
