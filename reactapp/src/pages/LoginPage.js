@@ -1,7 +1,7 @@
 import react,{useState} from 'react';
 import { connect } from 'react-redux';
 import { authenticate, authFailure, authSuccess } from '../redux/authActions';
-import './loginpage.css';
+import './login.css';
 import {userLogin} from '../api/authenticationService';
 import {Alert,Spinner} from 'react-bootstrap';
 import { Link } from "react-router-dom";
@@ -57,40 +57,59 @@ const LoginPage=({loading,error,...props})=>{
     console.log("Loading ",loading);
 
     return (
-        <div className="login-page">
-                   
+        <div className="myStyle">
+      <div style={{ display: "flex", height: "100vh" }}>
+        <div
+          style={{
+            height: "100vh",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            width: "45%",
+          }}
+        >
+          <p className="">
+            <h1 style={{ color: "white", fontSize: "60px" }}>
+              <strong>Tariff Manager</strong>
+            </h1>
+          </p>
+        </div>
+        <center
+          style={{
+            height: "100vh",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            width: "50%",
+          }}
+        >
+          <div
+            className="colors"
+          >
+            <h2 style={{ color: "black", fontSize: "35px" }}>Login</h2>
+            <br></br>
+
+            <form className="my-login-validation" onSubmit={handleSubmit} noValidate={false}>
               
-                                            
-        <section className="h-100">
-        <div className="container h-100">
-       
-            <div className="row justify-content-md-center h-100">
-                <div className="card-wrapper">
-
-                    <div className="card fat">
-                        <div className="card-body">
-                            <h4 className="card-title">Login</h4>
-                            
-                            <form className="my-login-validation" onSubmit={handleSubmit} noValidate={false}>
-                                <div className="form-group">
-                                    <label htmlFor="email">User Name</label>
-                                    <input id="email" type="text" className="form-control" minLength={5} value={values.userName} onChange={handleChange} name="userName" required />
-                                    
-                                        <div className="invalid-feedback">
-                                            UserId is invalid
-                                        </div>
-                                </div>
-
-                                <div className="form-group">
-                                    <label>password</label>
-                                    <input id="password" type="password" className="form-control" minLength={8} value={values.password} onChange={handleChange} name="password" required/>
+              <div class="txt_field" id="email">
+              <input id="email" type="text" minLength={5} value={values.userName} onChange={handleChange} name="userName" required />
+                  
+                                    <div className="invalid-feedback">
+                                        UserId is invalid
+                                    </div>
+                
+                <label>Email or username</label>
+              </div>
+              <div class="txt_field" id="password">
+              <input id="password" type="password" minLength={8} value={values.password} onChange={handleChange} name="password" required/>
                                     <div className="invalid-feedback">
                                         Password is required
-                                    </div>
-                                </div><br></br>
-                                
-                                <div className="form-group m-0">
-                                    <button type="submit" className="btn btn-primary">
+                                    </div>                <span></span>
+                <label>Password</label>
+              </div>
+
+               <div className="form-group m-0">
+                                    <button type="submit" value = "Login" classname="login" className="btn btn-primary">
                                         Login
                                         {loading && (
                                             <Spinner
@@ -102,29 +121,30 @@ const LoginPage=({loading,error,...props})=>{
                                           />
                                         )}
                                     </button>
-                                </div>
+                                </div> 
 
-                                <div class="signup_link">
-                                New here?
-                                    <a>
-                                    <Link to="/signup">Click to signup</Link>
-                                    </a>
-                                </div>
+              {/* <input type="submit" value="Login" classname="login"></input>  */}
+                
+             
+              <div class="signup_link">
+                New here?
+                <a>
+                  <Link to="/signup">Click to signup</Link>
+                </a>
+              </div>
+            </form>
 
-                            </form>
-                            { error &&
+             { error &&
                             <Alert style={{marginTop:'20px'}} variant="danger">
                                     {error}
                                 </Alert>
-                            }
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-        </div>
-    )
+                            } 
+
+          </div>
+        </center>
+      </div>
+    </div>
+    );
 
 
     
