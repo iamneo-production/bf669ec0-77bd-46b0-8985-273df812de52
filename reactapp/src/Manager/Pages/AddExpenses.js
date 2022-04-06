@@ -57,7 +57,16 @@ function Hr_AddExpenses() {
         console.log(response.status);
         console.log(response.expenses);
       });
-    // .then(response => setUserId(response.data.id));
+      setExpenses({
+        userid: "",
+        expenseid: "",
+        billnumber: "",
+        billcost: "",
+        billimage: null,
+        date_str: "",
+        status: "Unpaid",
+        remark: "",
+      });
   };
   return (
     <div className="App1">
