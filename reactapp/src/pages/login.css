@@ -3,8 +3,8 @@
     text-size-adjust: 30px;
   }
   .myStyle {
-    /*background-image: url(../home/pc.jpg);*/
-    background-color: brown; 
+    /*background-image: url(../home/pc.jpg);
+     background-color: brown;  */
     background-size: cover;
     background-repeat: no-repeat;
   }
