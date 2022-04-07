@@ -18,11 +18,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.config.JWTTokenHelper;
-import com.example.demo.entities.User;
-import com.example.demo.requests.AuthenticationRequest;
-import com.example.demo.responses.LoginResponse;
-import com.example.demo.responses.UserInfo;
+import com.examly.springapp.config.JWTTokenHelper;
+import com.examly.springapp.entities.User;
+import com.examly.springapp.requests.AuthenticationRequest;
+import com.examly.springapp.responses.LoginResponse;
+import com.examly.springapp.responses.UserInfo;
 
 @RestController
 @RequestMapping("/")
