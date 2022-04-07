@@ -15,7 +15,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.AuthenticationEntryPoint;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-import com.example.demo.services.CustomUserService;
+import com.examly.springapp.services.CustomUserService;
 
 @Configuration
 @EnableWebSecurity
