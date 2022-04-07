@@ -64,6 +64,7 @@ function MydModalWithGrid(props) {
               <h4>Receipt</h4>
             </Col>
             <Col xs={2} md={6}>
+              <img src={data.billimage} />
               {/* <img
                 src={
                   "data:image/png;base64," +

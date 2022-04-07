@@ -15,8 +15,10 @@ function Hr_ViewExpenses(props) {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8001/expense")
-      .then((response) => setItems(response.data))
+      .get("http://localhost:8081/expense")
+      .then((response) => {
+        console.log(response.data);
+        setItems(response.data)})
       .catch(console.error);
   }, []);
 
@@ -26,7 +28,7 @@ function Hr_ViewExpenses(props) {
     event.preventDefault();
     if (query) {
       axios
-        .get(`http://localhost:8001/expense/${query}`)
+        .get(`http://localhost:8081/expense/${query}`)
         .then((res) => {
           setItems([res.data]);
         })

@@ -1,4 +1,5 @@
 import "./AddExpenses.css";
+import FileBase from "react-file-base64";
 import "bootstrap/dist/css/bootstrap.min.css";
 // import { BrowserRouter as Router } from "react-router-dom";
 import { FaUserAlt } from "@react-icons/all-files/fa/FaUserAlt";
@@ -52,7 +53,7 @@ function Hr_AddExpenses() {
     };
 
     axios
-      .post("http://localhost:8001/expense", ExpenseData)
+      .post("http://localhost:8081/expense", ExpenseData)
       .then((response) => {
         console.log(response.status);
         console.log(response.expenses);
@@ -144,14 +145,26 @@ function Hr_AddExpenses() {
           <div className="mb-3">
             <Form.Group controlId="fileUpload">
               <span className="upload">Upload Receipt</span>
-              <input
+              {/* <input
                 type="file"
                 name="billimage"
                 value={expenses.billimage}
                 onChange={handleChange}
                 className="form-control-file"
                 id="exampleFormControlFile1"
-              />
+              /> */}
+              <FileBase
+              type="file"
+              name="billimage"
+              value={expenses.billimage}
+              multiple={false}
+              onDone={({ base64 }) =>
+              setExpenses({
+                ...expenses,
+                billimage: base64,
+              })
+              }
+            />
             </Form.Group>
           </div>
           <div className="mb-1">

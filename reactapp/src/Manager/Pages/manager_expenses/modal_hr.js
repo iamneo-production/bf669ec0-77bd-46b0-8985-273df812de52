@@ -29,7 +29,7 @@ function MydModalWithGrid(props) {
       datedon: expenses.datedon,
     };
     axios
-      .put(`http://localhost:8001/expense/${data.expenseid}`, updated_data)
+      .put(`http://localhost:8081/expense/${data.expenseid}`, updated_data)
       .then((res) => {
         console.log(res);
         console.log(res.data);
@@ -40,7 +40,7 @@ function MydModalWithGrid(props) {
   };
 
   const deleteExpense = (id, e) => {
-    axios.delete(`http://localhost:8001/expense/${id}`).then((res) => {
+    axios.delete(`http://localhost:8081/expense/${id}`).then((res) => {
       console.log(res);
       console.log(res.data);
 
@@ -118,7 +118,7 @@ function MydModalWithGrid(props) {
               <h4>Receipt</h4>
             </Col>
             <Col xs={2} md={6}>
-              {data.billimage}
+            <img src={data.billimage} />
             </Col>
           </Row>
           {/* <div className="Icon_edit">
@@ -145,7 +145,9 @@ function MydModalWithGrid(props) {
           Paid
         </Button>
         <Button
-          onClick={(e) => deleteExpense(data.expenseid, e)}
+          onClick={(e) => {
+            console.log("del");
+            deleteExpense(data.expenseid, e)}}
           // onChange={(e) => setQuery(e.target.value)}
           variant="danger"
         >

@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import AddExpenses from "./home/AddExpenses";
-import ViewExpenses from "./home/ViewExpenses";
+// import AddExpenses from "./home/AddExpenses";
+// import ViewExpenses from "./home/ViewExpenses";
 import reportWebVitals from "./reportWebVitals";
 import App from "./App";
-import Sidebar from "./NavBar/navbar";
-import Hr_ViewExpenses from "./home/manager_expenses/hr_ViewExpenses";
+// import Sidebar from "./NavBar/navbar";
+// import Hr_ViewExpenses from "./home/manager_expenses/hr_ViewExpenses";
 
 ReactDOM.render(
   <React.StrictMode>
